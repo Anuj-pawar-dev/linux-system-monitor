@@ -7,6 +7,7 @@ A simple bash script that Monitor
 -Memory usage 
 -Disk usage 
 -Top processes
+-Simple alert when CPU usage is high
 
 
 ## Run  ###
