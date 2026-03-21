@@ -22,7 +22,8 @@ ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -n 6
 
 cpu=$(top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4}')
 cpu_int=${cpu%.*}
-if [ "$cpu_int" -gt 80]
+if 
+	[ "$cpu_int" -gt 80 ]
 then
 	echo"WARNING: High CPU Usage!"
 fi
