@@ -10,7 +10,7 @@ uptime
 
 echo ""
 echo "cpu usage:"
-top -bn1 | grep "cpu(s)"
+top -bn1 | grep "%Cpu(s)"
 
 echo""
 echo "memoory usage:"
